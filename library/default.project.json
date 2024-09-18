@@ -1,0 +1,6 @@
+{
+	"name": "expect-rust-types",
+	"tree": {
+		"$path": "./out/"
+	}
+}
