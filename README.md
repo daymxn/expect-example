@@ -10,4 +10,4 @@ Both of these libraries should help provide you with the context you need to und
 how to create an extension library, and how people will use that extension library.
 
 To learn more about extension libraries, and how they work, take a look at the
-[Extension Libraries Guide](https://rbxts-expect.daymxn.com/docs/category/extension-libraries).
+[Extension Libraries Guide](https://rbxts-expect.daymxn.com/docs/category/extension-guides).
