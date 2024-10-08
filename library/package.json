@@ -44,15 +44,16 @@
 		"prettier": "^3.2.5",
 		"prettier-plugin-organize-imports": "^4.0.0",
 		"roblox-ts": "^3.0.0-next",
-		"typescript": "=5.5.3"
+		"typescript": "=5.5.3",
+		"@rbxts/expect": "^2.0.1"
 	},
 	"dependencies": {
-		"@rbxts/expect": "file:../../expect/temp/rbxts-expect-0.0.1.tgz",
 		"@rbxts/rust-classes": "^0.12.0-dev-b01f73c",
 		"@rbxts/services": "^1.5.4",
 		"@rbxts/string-utils": "^1.0.3"
 	},
 	"peerDependencies": {
-		"roblox-ts": "^3.0.0"
+		"roblox-ts": "^3.0.0",
+		"@rbxts/expect": "^2.0.0"
 	}
 }

@@ -24,7 +24,7 @@ const baseMessage = new ExpectMessageBuilder(
   `Expected ${place.name} to ${place.not} be 'None' (Option)`
 ).nestedMetadata({ [place.path]: place.actual.value });
 
-const none: CustomMethodImpl<unknown> = (_, actual) => {
+const optionNone: CustomMethodImpl<unknown> = (_, actual) => {
   const message = baseMessage.use();
 
   if (typeOf(actual) !== "table") {
@@ -46,10 +46,10 @@ const none: CustomMethodImpl<unknown> = (_, actual) => {
 
 declare module "@rbxts/expect" {
   interface Assertion<T> {
-    none(): Assertion<Option<defined>>;
+    optionNone(): Assertion<Option<defined>>;
   }
 }
 
 extendMethods({
-  none: none,
+  optionNone: optionNone,
 });

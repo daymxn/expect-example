@@ -31,10 +31,10 @@ export = () => {
 
   describe("options", () => {
     it("checks if the value is a none or some type", () => {
-      expect(Option.none()).to.be.none().but.not.some();
-      expect(Option.some(5)).to.be.some().but.not.none();
-      expect(5).to.not.be.some().or.none();
-      expect(undefined).to.not.be.some().or.none();
+      expect(Option.none()).to.be.optionNone().but.not.optionSome();
+      expect(Option.some(5)).to.be.optionSome().but.not.optionNone();
+      expect(5).to.not.be.optionSome().or.optionNone();
+      expect(undefined).to.not.be.optionSome().or.optionNone();
     });
   });
 };
